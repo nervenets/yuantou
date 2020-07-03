@@ -20,7 +20,6 @@ public class RedisSyncLocker<R, P> {
      * @param executor  通知执行实现
      * @param o         输入参数
      * @return 同步返回参数
-     * @throws Exception
      */
     public R keyLock(String lockedKey, ISyncExecutor<R, P> executor, P o) throws Exception {
         String lockKey = String.format(LOCKED_KEY_PREFIX, lockedKey);
@@ -52,7 +51,6 @@ public class RedisSyncLocker<R, P> {
      * @param id       加锁的KEY（自由定制）
      * @param executor 通知执行实现
      * @return 同步返回参数
-     * @throws Exception
      */
     public R idLock(long id, ISyncExecutor<R, P> executor) throws Exception {
         return this.keyLock(String.format("_id(%s)", id), executor, null);

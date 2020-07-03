@@ -71,7 +71,7 @@ public abstract class HibernateJsonType implements UserType, Serializable {
     /**
      * 本类型实例是否可变
      *
-     * @return
+     * @return 是否可变
      */
     @Override
     public boolean isMutable() {
