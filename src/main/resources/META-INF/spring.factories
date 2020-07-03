@@ -1,0 +1,8 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.nervenets.general.config.ApplicationConfiguration,\
+  com.nervenets.general.config.ApplicationProperties,\
+  com.nervenets.general.config.DruidConfiguration,\
+  com.nervenets.general.config.RedisCacheConfig,\
+  com.nervenets.general.config.Swagger2Configuration,\
+  com.nervenets.general.config.FilterConfig,\
+  com.nervenets.general.utils.SpringContextHolder

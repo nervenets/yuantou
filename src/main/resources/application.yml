@@ -1,0 +1,3 @@
+application:
+  authorize-permit-all:
+    -
